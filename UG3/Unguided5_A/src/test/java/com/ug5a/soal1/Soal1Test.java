@@ -13,20 +13,21 @@ public class Soal1Test {
 
     @Test
     public void transPayTest() {
-        //valid
+        // valid
         transPay1 = new TransPay();
         transPay1.setNama("John Doe");
         transPay1.setSaldo(500000);
         Assert.assertEquals(500000, transPay1.getSaldo());
         Assert.assertEquals("John Doe", transPay1.getNama());
 
-        //invalid
+        // invalid
         transPay2 = new TransPay();
         transPay2.setNama("Jane Doe");
         transPay2.setSaldo(-100000);
         Assert.assertEquals(0, transPay2.getSaldo());
         Assert.assertEquals("Jane Doe", transPay2.getNama());
     }
+
     @Before
     @Test
     public void keyboardTest() {
