@@ -1,7 +1,7 @@
 package com.ug3.soal1;
 
 public class Makanan {
-    private String name,expired;
+    private String name, expired;
     private double weight, quantity;
 
     public double getQuantity() {
